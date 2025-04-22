@@ -1,4 +1,13 @@
-## Téléchargement des fichiers images d'une catégorie Wikimedia en utilisant l'API et JQ
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>wc</title>
+  </head>
+  <body>
+    <main>
+        <div class="content" markdown="1">
+          ## Téléchargement des fichiers images d'une catégorie Wikimedia en utilisant l'API et JQ
 
 ```bash
 categorie="Algeria_in_the_Bulgarian_Archives"
@@ -19,3 +28,7 @@ getim=$(curl -s $media_query|jq -r '.original.url')
 
 while read filename; do curl -# -O $getim; done < /tmp/filenames.txt
 ```
+        </div> 
+    </main>
+  </body>
+</html>
