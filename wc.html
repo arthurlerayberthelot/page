@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>wc</title>
+  </head>
+  <body>
+    <main>
+      <h1>Téléchargement des fichiers images d'une catégorie Wikimedia en utilisant l'API et JQ</h1>
+      <div><code>categorie="Algeria_in_the_Bulgarian_Archives"
+api_query="https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:$categorie&cmlimit=max&cmtype=file&format=json&formatversion=2"</code></div>
+      <h3>Extraction des noms de fichiers de la catégorie :</h3>
+      <div><code>curl -s $api_query|jq -r '.query.categorymembers[].title|@uri' > /tmp/filenames.txt</code></div>
+      <h3>Boucle de téléchargement :</h3>
+      <div><code>media_query="https://api.wikimedia.org/core/v1/commons/file/$filename"
+getim=$(curl -s $media_query|jq -r '.original.url')
+while read filename; do curl -# -O $getim; done < /tmp/filenames.txt</code></div>
+    </main>
+  </body>
+</html>
