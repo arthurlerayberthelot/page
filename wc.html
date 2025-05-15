@@ -15,14 +15,20 @@
   <body>
     <main>
       <h1>Téléchargement des fichiers images d'une catégorie Wikimedia en utilisant l'API et JQ</h1>
-      <div><code>categorie="Algeria_in_the_Bulgarian_Archives"
-api_query="https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:$categorie&cmlimit=max&cmtype=file&format=json&formatversion=2"</code></div>
+      <div>
+        <p>categorie="Algeria_in_the_Bulgarian_Archives"</p>
+        <p>api_query="https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:$categorie&cmlimit=max&cmtype=file&format=json&formatversion=2"</p>
+      </div>
       <h3>Extraction des noms de fichiers de la catégorie :</h3>
-      <div><code>curl -s $api_query|jq -r '.query.categorymembers[].title|@uri' > /tmp/filenames.txt</code></div>
+      <div>
+        <p>curl -s $api_query|jq -r '.query.categorymembers[].title|@uri' > /tmp/filenames.txt</p>
+      </div>
       <h3>Boucle de téléchargement :</h3>
-      <div><code>media_query="https://api.wikimedia.org/core/v1/commons/file/$filename"
-getim=$(curl -s $media_query|jq -r '.original.url')
-while read filename; do curl -# -O $getim; done < /tmp/filenames.txt</code></div>
+      <div>
+        <p>media_query="https://api.wikimedia.org/core/v1/commons/file/$filename"</p>
+        <p>getim=$(curl -s $media_query|jq -r '.original.url')</p>
+        <p>while read filename; do curl -# -O $getim; done < /tmp/filenames.txt</p>
+      </div>
     </main>
   </body>
 </html>
