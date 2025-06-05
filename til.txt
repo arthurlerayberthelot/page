@@ -23,3 +23,12 @@ RAM → beaucoup plus lente que le cache
 
 -----------------------------------------
 
+ALIMENTATIONS (PSU)
+
+ATX 24 broches (carte mère)
+
+EPS 8 broches (CPU)
+
+PCIe 6/8 broches (GPU)
+
+SATA / Molex (stockage, ventilos)
