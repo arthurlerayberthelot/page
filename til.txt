@@ -2,6 +2,12 @@ Aujourd'hui j'ai appris
 
 -----------------------------------------05/06/2025
 
+SCAN PERIPHERIQUES RESEAU
+
+nmap -sn 192.168.1.0/24
+
+-----------------------------------------05/06/2025
+
 CISCO IOS : AFFICHER INTERFACES ACTIVES, STATUT ET IP
 
 show ip interface brief
