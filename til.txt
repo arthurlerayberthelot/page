@@ -1,0 +1,13 @@
+TODAY I LEARN | Aujourd'hui j'ai appris
+---------------------------------------
+---------------------------------------
+
+Chipset : composant faisant interface entre tous les composants d'un pc.
+
+Historiquement divisé en deux :
+
+Northbridge : RAM + CPU + carte graphique
+Southbridge : ports USB, SATA, audio, etc
+
+-----------------------------------------
+
