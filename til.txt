@@ -2,6 +2,17 @@ Aujourd'hui j'ai appris
 
 -----------------------------------------05/06/2025
 
+CONFIG PORT TRUNK SUR Gi0/1 EN AUTORISANT VLANS 10 & 20 (PAR EXEMPLE)
+
+configure terminal
+interface GigabitEthernet0/1
+description Trunk vers équipement
+switchport trunk encapsulation dot1q    # si requis par le modèle
+switchport mode trunk
+switchport trunk allowed vlan 10,20
+
+-----------------------------------------05/06/2025
+
 Chipset : composant faisant interface entre tous les composants d'un pc.
 
 Historiquement divisé en deux :
