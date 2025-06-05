@@ -11,3 +11,15 @@ Southbridge : ports USB, SATA, audio, etc
 
 -----------------------------------------
 
+TYPES MEMOIRE CACHE
+
+L1 → ultra rapide, petite capacité, par cœur
+
+L2 → rapide, plus grand, parfois partagé
+
+L3 → plus lent, souvent partagé entre les cœurs
+
+RAM → beaucoup plus lente que le cache
+
+-----------------------------------------
+
