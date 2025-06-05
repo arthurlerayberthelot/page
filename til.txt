@@ -2,6 +2,24 @@ Aujourd'hui j'ai appris
 
 -----------------------------------------05/06/2025
 
+CISCO IOS : AFFICHER INTERFACES ACTIVES, STATUT ET IP
+
+show ip interface brief
+
+-----------------------------------------05/06/2025
+
+PROTEGER UN FICHIER DE LA SUPPRESSION
+
+chattr +i fichier
+
+-----------------------------------------05/06/2025
+
+RECHERCHE DE COMMANDE DANS LE TERMINAL BASH
+
+ctrl + r
+
+-----------------------------------------05/06/2025
+
 CONFIG PORT TRUNK SUR Gi0/1 EN AUTORISANT VLANS 10 & 20 (PAR EXEMPLE)
 
 configure terminal
