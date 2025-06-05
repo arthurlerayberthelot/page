@@ -1,6 +1,6 @@
 Aujourd'hui j'ai appris
----------------------------------------
----------------------------------------
+
+-----------------------------------------05/06/2025
 
 Chipset : composant faisant interface entre tous les composants d'un pc.
 
@@ -9,7 +9,7 @@ Historiquement divisé en deux :
 Northbridge : RAM + CPU + carte graphique
 Southbridge : ports USB, SATA, audio, etc
 
------------------------------------------
+-----------------------------------------05/06/2025
 
 TYPES MEMOIRE CACHE
 
@@ -21,7 +21,7 @@ L3 → plus lent, souvent partagé entre les cœurs
 
 RAM → beaucoup plus lente que le cache
 
------------------------------------------
+-----------------------------------------05/06/2025
 
 ALIMENTATIONS (PSU)
 
