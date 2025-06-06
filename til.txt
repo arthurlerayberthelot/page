@@ -2,6 +2,8 @@ Aujourd'hui j'ai appris
 
 -----------------------------------------06/06/2025
 
+WIRESHARK : OBSERVATION TCP
+
 Objectif                                      | Filtre Wireshark
 ----------------------------------------------|------------------------------
 Voir un flux TCP complet                      | tcp.stream eq 0   (ou 1, 2…)
@@ -13,7 +15,7 @@ Analyser un port spécifique                   | tcp.port == 80    (ou autre)
 
 -----------------------------------------05/06/2025
 
-SCAN PERIPHERIQUES RESEAU
+NMAP : SCAN PERIPHERIQUES RESEAU
 
 nmap -sn 192.168.1.0/24
 
@@ -25,19 +27,19 @@ show ip interface brief
 
 -----------------------------------------05/06/2025
 
-PROTEGER UN FICHIER DE LA SUPPRESSION
+LINUX : PROTEGER UN FICHIER DE LA SUPPRESSION
 
 chattr +i fichier
 
 -----------------------------------------05/06/2025
 
-RECHERCHE DE COMMANDE DANS LE TERMINAL BASH
+BASH : RECHERCHE DE COMMANDE DANS LE TERMINAL
 
 ctrl + r
 
 -----------------------------------------05/06/2025
 
-CONFIG PORT TRUNK SUR Gi0/1 EN AUTORISANT VLANS 10 & 20 (PAR EXEMPLE)
+CISCO IOS : CONFIG PORT TRUNK SUR Gi0/1 EN AUTORISANT VLANS 10 & 20 (PAR EXEMPLE)
 
 configure terminal
 interface GigabitEthernet0/1
@@ -48,6 +50,8 @@ switchport trunk allowed vlan 10,20
 
 -----------------------------------------05/06/2025
 
+HARDWARE
+
 Chipset : composant faisant interface entre tous les composants d'un pc.
 
 Historiquement divisé en deux :
@@ -57,7 +61,7 @@ Southbridge : ports USB, SATA, audio, etc
 
 -----------------------------------------05/06/2025
 
-TYPES MEMOIRE CACHE
+HARDWARE : TYPES MEMOIRE CACHE
 
 L1 → ultra rapide, petite capacité, par cœur
 
@@ -69,7 +73,7 @@ RAM → beaucoup plus lente que le cache
 
 -----------------------------------------05/06/2025
 
-ALIMENTATIONS (PSU)
+HARDWARE : ALIMENTATIONS (PSU)
 
 ATX 24 broches (carte mère)
 
