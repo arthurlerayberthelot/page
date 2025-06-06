@@ -1,5 +1,16 @@
 Aujourd'hui j'ai appris
 
+-----------------------------------------06/06/2025
+
+Objectif                                      | Filtre Wireshark
+----------------------------------------------|------------------------------
+Voir un flux TCP complet                      | tcp.stream eq 0   (ou 1, 2…)
+Voir uniquement le trafic HTTP                | http
+Voir le trafic vers une IP                    | ip.addr == 10.0.0.10
+Voir les erreurs TCP (retransmissions, resets)| tcp.analysis.flags
+Analyser un port spécifique                   | tcp.port == 80    (ou autre)
+
+
 -----------------------------------------05/06/2025
 
 SCAN PERIPHERIQUES RESEAU
