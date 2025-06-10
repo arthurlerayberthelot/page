@@ -2,6 +2,39 @@ Aujourd'hui j'ai appris
 
 -----------------------------------------10/06/2025
 
+ANSIBLE : CREATE LINUX USER
+
+tasks:
+  - name: Add user deploy
+    ansible.builtin.user:
+      name: deploy
+      shell: /bin/bash
+      create_home: yes
+      groups: sudo
+      append: yes
+
+  - name: check home directory
+    ansible.builtin.stat:
+      path: /home/deploy
+    register: deploy_home
+
+  - name: debug home directory
+    ansible.builtin.debug:
+      msg: "Le home de deploy existe !"
+    when: deploy_home.stat.exists
+
+  - name: check sudo group
+    ansible.builtin.command:
+      cmd: id deploy
+    register: user_info
+
+  - name: check id
+    ansible.builtin.debug:
+      msg: "Groupes de deploy : {{ user_info.stdout }}"
+
+
+-----------------------------------------10/06/2025
+
 RESEAU
 
 ## SNAT vs DNAT :
