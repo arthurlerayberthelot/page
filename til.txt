@@ -1,5 +1,27 @@
 Aujourd'hui j'ai appris
 
+-----------------------------------------10/06/2025
+
+RESEAU
+
+## SNAT vs DNAT :
+
+SNAT (Source NAT) : modifie l'adresse IP source d’un paquet.
+
+Typiquement utilisé lorsqu’un hôte du LAN veut sortir sur Internet : son IP privée est remplacée par l’IP publique du routeur.
+
+DNAT (Destination NAT) : modifie l'adresse IP de destination d’un paquet.
+
+Utilisé pour rediriger le trafic entrant vers un hôte du réseau local (ex : HTTP vers un serveur web interne).
+
+## Statique vs dynamique :
+
+NAT statique : correspondance 1:1 fixe entre une IP privée et une IP publique. Pas courant pour les postes clients, mais utilisé pour certains serveurs.
+
+NAT dynamique : correspondance 1:1 temporaire, issue d’un pool d’IP publiques. Chaque session sortante utilise une IP différente du pool (mais plus rare aujourd’hui, IPv4 oblige).
+
+PAT (Port Address Translation) : c’est ce qu’on appelle communément NAT avec translation de port, ou NAT overload. Très courant : plusieurs IP privées sont masquées derrière une seule IP publique, en utilisant des ports différents pour les distinguer.
+
 -----------------------------------------06/06/2025
 
 WIRESHARK : OBSERVATION TCP
