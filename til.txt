@@ -1,8 +1,10 @@
 Aujourd'hui j'ai appris
 
-LINUX
+-----------------------------------------11/06/2025
 
-ss : socket statistics :: infos réseaux 
+LINUX : SS
+
+socket statistics : infos réseaux 
 
 -----------------------------------------10/06/2025
 
