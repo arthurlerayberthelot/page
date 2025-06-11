@@ -1,5 +1,40 @@
 Aujourd'hui j'ai appris
 
+ANSIBLE : MAJ D'UNE PAGE WEB NGINX
+
+---
+
+- name: Maj de la page log.ajglb.fr
+  hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+
+    - name: Mettre à jour Nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: latest
+
+    - name: Démarrer Nginx si pas déjà fait
+      ansible.builtin.service:
+        name: nginx
+        state: started
+
+    - name: Maj de index.html
+      ansible.builtin.copy:
+        src: /home/ajglb/log/index.html
+        dest: /var/www/log.ajglb.fr/html/index.html
+        backup: true
+      notify:
+        - Redémarrer nginx
+
+  handlers:
+    - name: Redémarrer nginx
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+
 -----------------------------------------11/06/2025
 
 ANSIBLE : LOOP
