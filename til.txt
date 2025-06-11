@@ -4,7 +4,9 @@ Aujourd'hui j'ai appris
 
 LINUX : SS
 
-socket statistics : infos réseaux 
+socket statistics : infos réseaux
+
+ss -tuln | grep :80
 
 -----------------------------------------10/06/2025
 
