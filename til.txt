@@ -1,5 +1,9 @@
 Aujourd'hui j'ai appris
 
+LINUX
+
+ss : socket statistics :: infos réseaux 
+
 -----------------------------------------10/06/2025
 
 ANSIBLE : COPY NGINX CONF
