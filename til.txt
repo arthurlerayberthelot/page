@@ -2,6 +2,17 @@ Aujourd'hui j'ai appris
 
 -----------------------------------------11/06/2025
 
+ANSIBLE : LOOP
+
+- name: Boucle
+  module:
+    param1: "{{ item }}"
+  loop:
+    - value1
+    - value2
+
+-----------------------------------------11/06/2025
+
 LINUX : SS
 
 socket statistics : infos réseaux
