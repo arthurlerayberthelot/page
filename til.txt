@@ -2,6 +2,8 @@ Aujourd'hui j'ai appris
 
 -----------------------------------------16/06/2025
 
+LINUX : IP
+
 ip route get 1.1.1.1 # affiche l'interface utilisée pour le routage vers l'extérieur
 
 -----------------------------------------12/06/2025
