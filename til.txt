@@ -1,5 +1,12 @@
 Aujourd'hui j'ai appris
 
+-----------------------------------------23/06/2025
+
+SQL
+
+On appelle dump, la génération des commandes SQL destinées a reconstituer tout ou partie d'une base de données (sauvegarde logique), 
+tandis que la "sauvegarde" d'une base de données est constituée d'une copie binaire de l'intégralité des pages de données et des transactions (sauvegarde physique).
+
 -----------------------------------------16/06/2025
 
 LINUX : IP
