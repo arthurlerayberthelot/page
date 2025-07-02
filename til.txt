@@ -6,6 +6,12 @@ LINUX / UNIX : ED
 
 Outil d'analyse linguistique monofichier, ancêtre de GREP.
 
+ed -s file.txt
+
+>>g/mot/p
+
+https://www.youtube.com/watch?v=iQZ81MbjKpU&t=82s
+
 -----------------------------------------23/06/2025
 
 SQL
