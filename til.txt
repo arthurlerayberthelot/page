@@ -1,5 +1,11 @@
 Aujourd'hui j'ai appris
 
+-----------------------------------------02/07/2025
+
+LINUX / UNIX : ED
+
+Outil d'analyse linguistique monofichier, ancêtre de GREP.
+
 -----------------------------------------23/06/2025
 
 SQL
