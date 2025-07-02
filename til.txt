@@ -12,6 +12,8 @@ ed -s file.txt
 
 https://www.youtube.com/watch?v=iQZ81MbjKpU&t=82s
 
+g/re/p (global/regex/print)
+
 -----------------------------------------23/06/2025
 
 SQL
